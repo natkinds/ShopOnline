@@ -51,6 +51,12 @@ body {
     width: 100%;
 }
 
+.section__subtitle {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
 .content__list {
     padding-left: 17px;
     font-size: 16px;
