@@ -1,3 +1,19 @@
+@font-face {
+    font-family: Lato;
+    src: local('Lato'), local('Lato-Regular'), 
+        url('../fonts/lato-regular.woff2') format('woff2'), 
+        url('../fonts/lato-regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lato;
+    src: local('Lato Bold'), local('Lato-Bold'), 
+        url('../fonts/lato-bold.woff2') format('woff2'), 
+        url('../fonts/lato-bold.woff') format('woff');
+    font-weight: 700;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +21,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 22px;
     line-height: 33px;
     font-weight: 400;
