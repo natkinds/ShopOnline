@@ -1,0 +1,13 @@
+.section:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.section__image {
+    width: 100%;
+}
+
+.section__subtitle {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 400;
+}
