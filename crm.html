@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/crm.css">
+    <title>CRM / ShopOnline</title>
+</head>
+<body>
+    <main class="main">
+        <form class="add-goods" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <legend class="add-goods__title">Добавить товар</legend>
+
+            <fieldset class="add-goods__wrapper">
+                <label class="add-goods__item">
+                    <span class="add-goods__item-name">Наименование</span>
+                    <input class="add-goods__input" type="text" name="name" required>
+                </label>
+    
+                <label class="add-goods__item">
+                    <span class="add-goods__item-name">Категория</span>
+                    <input class="add-goods__input" type="text" name="category" required>
+                </label>
+    
+                <label class="add-goods__item">
+                    <span class="add-goods__item-name">Единицы измерения</span>
+                    <input class="add-goods__input" type="text" name="units" required>
+                </label>
+    
+                <label class="add-goods__item add-goods__discount">
+                    <span class="add-goods__item-name">Дисконт</span>
+                    <input class="add-goods__input add-goods__discount-checkbox" type="checkbox" value="enabled">
+                    <input class="add-goods__input add-goods__discount-text" type="text" name="discount" disabled>
+                </label>
+    
+                <label class="add-goods__item">
+                    <span class="add-goods__item-name">Описание</span>
+                    <textarea class="add-goods__input add-goods__description" name="description"></textarea>
+                </label>
+    
+                <label class="add-goods__item">
+                    <span class="add-goods__item-name">Количество</span>
+                    <input class="add-goods__input" type="number" name="amount" required>
+                </label>
+    
+                <label class="add-goods__item">
+                    <span class="add-goods__item-name">Цена</span>
+                    <input class="add-goods__input" type="number" name="price" required>
+                </label>
+            </fieldset>
+
+            <button class="add-goods__button button" type="submit">Добавить товар</button>
+
+            <button class="add-goods__close-button button" type="button">
+                <img src="/img/icon-cross.svg" alt="sdaf">
+            </button>
+        </form>
+
+    </main>
+</body>
+</html>

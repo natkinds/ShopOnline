@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6E6893;
+}
+
+.main {
+    background-color: #F2F0F9;
+}
+
+.add-goods {
+    position: relative;
+    display: block;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 32px 0 28px;
+}
+
+.add-goods__title {
+    margin-bottom: 43px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.add-goods__wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 28px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #00000033;
+}
+
+.add-goods__item {
+    display: block;
+}
+
+.add-goods__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.add-goods__input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #F4F2FF;
+}
+
+.add-goods__discount {
+    position: relative;
+}
+
+.add-goods__discount-checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+.add-goods__discount-checkbox:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/icon_checkbox_checked.svg');
+    opacity: 0;
+}
+
+.add-goods__discount-checkbox:checked:after {
+    opacity: 1;
+}
+
+.add-goods__discount-text {
+    display: block;
+    vertical-align: top;
+    width: 474px;
+    margin-left: auto;
+    background-color: #EEEEEE;
+}
+
+.add-goods__discount-checkbox:checked + .add-goods__discount-text {
+    background-color: #F4F2FF;
+}
+
+.add-goods__description {
+    height: 112px;
+    resize: vertical;
+}
+
+.add-goods__button {
+    width: 200px;
+    margin-left: 352px;
+    padding: 10px 25px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #6D5BD0;
+    border-radius: 6px;
+}
+
+.add-goods__close-button {
+    position: absolute;
+    top: 20px;
+    right: -80px;
+    /* width: 24px;
+    height: 24px;
+    background-image: url('../img/icon-cross.svg'); */
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+}
+
+.add-goods__item-name {
+    display: block;
+    width: 240px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
